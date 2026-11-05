@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Education, awards, research, and teaching highlights for Natalia Hajłasz.">
+  <title>CV | Natalia Hajłasz</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="profile.svg" type="image/svg+xml">
+</head>
+<body>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="masthead">
+    <nav class="wrap" aria-label="Main navigation">
+      <a href="index.html" class="site-name">Natalia Hajłasz</a>
+      <a href="research.html">Research</a>
+      <a href="teaching.html">Teaching and Notes</a>
+      <a href="cv.html" aria-current="page">CV</a>
+    </nav>
+  </header>
+
+  <div class="layout wrap">
+    <aside class="profile" aria-label="Profile">
+      <img class="profile-photo" src="profile.png" alt="Portrait of Natalia Hajłasz" width="175" height="175">
+      <div>
+        <p class="profile-name">Natalia Hajłasz</p>
+        <p class="profile-role">PhD Student in Mathematics</p>
+      </div>
+      <details class="profile-details" open>
+        <summary>Contact</summary>
+        <ul class="profile-links">
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10c0 6-8 11-8 11s-8-5-8-11a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg><span>New York, NY</span></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m3 9 9-5 9 5-9 5-9-5Zm3 2v5c2 2 4 3 6 3s4-1 6-3v-5m3-2v6"/></svg><a href="https://cims.nyu.edu/">Courant Institute, NYU</a></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg><a href="mailto:nh2429@nyu.edu">nh2429@nyu.edu</a></li>
+          <li><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 7-5 5 5 5m8-10 5 5-5 5m-3-12-2 14"/></svg><a href="https://github.com/hajlasz">GitHub</a></li>
+        </ul>
+      </details>
+      <script>
+        const desktop = window.matchMedia("(min-width: 900px)");
+        const contact = document.querySelector(".profile-details");
+        contact.open = desktop.matches;
+        desktop.addEventListener("change", ({ matches }) => { contact.open = matches; });
+      </script>
+    </aside>
+
+    <main class="content" id="content" tabindex="-1">
+      <h1>CV</h1>
+      <h2>Education</h2>
+      <ul>
+        <li><strong>New York University, Courant Institute</strong> · PhD in mathematics, 2022–present. Advisor: <a href="https://cims.nyu.edu/~weare/">Jonathan Weare</a>.</li>
+        <li><strong>Harvard University</strong> · A.B. in mathematics, secondary field in chemistry, 2022.</li>
+      </ul>
+
+      <h2>Honors and Fellowships</h2>
+      <ul>
+        <li><a href="https://cims.nyu.edu/dynamic/academics/student_recognition/">Bella Manel Prize</a>, NYU Courant, 2026</li>
+        <li><a href="https://cims.nyu.edu/dynamic/events/4416/">Paul Garabedian Fellowship</a>, NYU Courant, 2025–26</li>
+      </ul>
+
+      <h2>Research and Teaching</h2>
+      <ul>
+        <li><a href="research.html">Research interests and preprint</a></li>
+        <li><a href="teaching.html">Teaching and course support</a></li>
+      </ul>
+    </main>
+  </div>
+
+  <footer class="footer">
+    <div class="wrap"><p>© 2026 Natalia Hajłasz</p></div>
+  </footer>
+</body>
+</html>
