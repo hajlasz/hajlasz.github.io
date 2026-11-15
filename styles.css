@@ -146,13 +146,6 @@ a:hover { color: #154b5a; }
 .content li { margin-bottom: 0.46rem; }
 .content .citation { margin-bottom: 0.55rem; color: var(--muted); font-size: 0.92rem; }
 
-.cv-pdf {
-  display: block;
-  width: 100%;
-  height: clamp(28rem, 80vh, 65rem);
-  border: 1px solid var(--rule);
-}
-
 .footer {
   background: #f2f3f3;
   color: var(--muted);
